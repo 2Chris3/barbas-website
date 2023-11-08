@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve a haircut at Barba's Barbershop, the newest studio barbershop in Duncan">
+    <meta name="author" content="Christopher CARRASCO">
+    <link rel="stylesheet" href="./Style/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- BEM : (Block__Element Modifiers) -->
+
+    <!-- mobl : mobile -->
+    <!-- desk : desktop -->
+    <!-- v : vertical -->
+    <!-- h : horizontal -->
+
+    
+
+    <header>
+        <div class="row">
+            <!-- logo-->
+            <figure>
+                <img src="./assets/images/p.svg" width="100px" height="100px" alt="Barba's Barbershop Logo" class="logoSymbol">
+            </figure>
+
+            <!-- navigation bar -->
+            <nav>
+                <ul class="navBar">
+                    <li class="">information</li>
+                    <li class="navBar__item">about us</li>
+                    <li class="navBar__item">contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="reservation"></section>
+
+    <!-- green stripe -->
+    <section class="businessInfo">
+        <div class="businessInfo__stripe">
+            <p class="businessInfo__text">Where and when ?</p>
+        </div>
+    </section>
+
+
+    <section class="aboutUs">❌</section>
+
+    <footer>
+        <adress class="contact">  
+            <!-- email -->
+            <div class="contact__email">
+                <a href="mailto:barbasbarbershop17@gmail.com" class="contact__email__link">Email</a>
+                <p class="contact__email--text">barbasbarbershop17@gmail.com</p>
+            </div>
+
+            <!-- phone -->
+            <div class="contact__phone">
+                <a href="tel:+17786975374" class="contact__phone__link">: Phone</a>
+                <p class="contact__phone__text">: 778 697 5374</p>
+            </div>
+        </adress>
+
+        <!-- drop a review : text + link -->
+        <div class="review">
+            <p class="review__text">We are exited to hear about your experience at <strong>Barba's Barbershop</strong>
+            </p>
+            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fapi%2Fjs%2FReviewsService.CrossOriginAuthSuccess%3Fpb%3D%211shttps%253A%252F%252Fwww.google.com%26key%3DAIzaSyBcv0QfUNUfBwo8pIGJ3teNCkaluSGUWus&hl=en&ifkv=AVQVeyySNgvafqDEd0-YxGrDt04VcGrl4fSnOBtLXTO_b6bN76SresQy0ZrAlyEgirUidTG_dlgwqQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1711428912%3A1698560980470445&theme=glif"
+                class="review__btn">How was your experience ?</a>
+        </div>
+
+        <!-- Social media : text + links -->
+        <div class="socialMedia">
+            <p class="socialMedia__text">CHECK OUR HAIRCUTS AND MORE ON <strong class="FB">FACEBOOK</strong> AND <strong class="IG">INSTAGRAM</strong></p>
+            <div class="socialMedia__icons">
+                <div class="socialMedia__icons__FB">❌</div>
+                <div class="socialMedia__icons__IG">❌</div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="./JS/index.js" defer></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+</body>
+
+</html>
