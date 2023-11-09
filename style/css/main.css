@@ -131,4 +131,13 @@ a:visited {
 
 /*   ::: COMPONENTS :::   */
 /*   ::: HOMEPAGE LAYOUT :::   */
+/*   ::: STRECHING RULES :::   */
+.row {
+  width: 100%;
+}
+
+.col {
+  height: 100%;
+}
+
 /*   ::: ANIMATIONS :::   */
