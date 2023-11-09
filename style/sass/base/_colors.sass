@@ -1,0 +1,27 @@
+/*   ::: MAPS :::   */
+
+$green : (green1 #f4fffb,green2 #def2ea,green3 #6c867d,green4 #667c7e,green5 #43524e,green6 #2a3330)
+$yellow : (yellow1 #fffaf1,yellow2 #ffeac1,yellow3 #e7cb84,yellow4 #e8a724)
+
+
+    
+/*   ::: LOOPS :::   */
+
+@each $color, $hexValue in $green
+    // text
+    .#{$color}-txt
+        color: $hexValue
+
+    // background
+    .#{$color}-bg
+        background-color: $hexValue
+
+
+@each $color, $hexValue in $yellow
+    // text
+    .#{$color}-txt
+        color: $hexValue
+
+    // background
+    .#{$color}-bg
+        background-color: $hexValue
