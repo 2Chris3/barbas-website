@@ -1,13 +1,13 @@
 /*   ::: BASE :::   */
-html, body, header, main, footer, section, article, figure, img {
+:where(html, body, header, main, footer, section, article, figure, img) {
   width: 100%;
 }
 
-html {
+:where(html) {
   scroll-behavior: smooth;
 }
 
-img {
+:where(img) {
   object-fit: cover;
 }
 
@@ -18,33 +18,29 @@ img {
   overflow-x: hidden;
 }
 
-button, input, fieldset {
+:where(button, input, fieldset) {
   border: none;
 }
 
-input::-webkit-search-cancel-button {
+:where(input::-webkit-search-cancel-button) {
   display: none;
 }
 
-fieldset, figure {
+:where(fieldset, figure) {
   display: flex;
 }
 
-ul, ol {
+:where(ul, ol) {
   list-style: none;
 }
 
-li {
+:where(li) {
   text-indent: 0;
 }
 
-a {
+:where(a, a:visited) {
+  color: black;
   text-decoration: none;
-  color: black;
-}
-
-a:visited {
-  color: black;
 }
 
 /*   ::: MAPS :::   */
