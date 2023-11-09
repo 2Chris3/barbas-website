@@ -1,5 +1,5 @@
 /*   ::: BASE :::   */
-:where(html, body, header, main, footer, section, article, figure, img) {
+:where(html, body, header, main, footer, section, article) {
   width: 100%;
 }
 
@@ -43,86 +43,75 @@
   text-decoration: none;
 }
 
-/*   ::: MAPS :::   */
-/*   ::: LOOPS :::   */
-.green1-txt {
-  color: #f4fffb;
-}
-
+/*   ::: VARIABLES & MAPS :::   */
+/*   ::: BACKGROUNDS :::   */
 .green1-bg {
   background-color: #f4fffb;
-}
-
-.green2-txt {
-  color: #def2ea;
 }
 
 .green2-bg {
   background-color: #def2ea;
 }
 
-.green3-txt {
-  color: #6c867d;
-}
-
 .green3-bg {
   background-color: #6c867d;
-}
-
-.green4-txt {
-  color: #667c7e;
 }
 
 .green4-bg {
   background-color: #667c7e;
 }
 
-.green5-txt {
-  color: #43524e;
-}
-
 .green5-bg {
   background-color: #43524e;
-}
-
-.green6-txt {
-  color: #2a3330;
 }
 
 .green6-bg {
   background-color: #2a3330;
 }
 
-.yellow1-txt {
-  color: #fffaf1;
-}
-
 .yellow1-bg {
   background-color: #fffaf1;
-}
-
-.yellow2-txt {
-  color: #ffeac1;
 }
 
 .yellow2-bg {
   background-color: #ffeac1;
 }
 
-.yellow3-txt {
-  color: #e7cb84;
-}
-
 .yellow3-bg {
   background-color: #e7cb84;
 }
 
-.yellow4-txt {
+.yellow4-bg {
+  background-color: #e8a724;
+}
+
+.white-bg {
+  background-color: white;
+}
+
+/*   ::: COMPLEX SELECTORS :::   */
+.green4-bg [class*=txt] {
+  color: #fffaf1;
+}
+
+.green5-bg [class*=txt] {
+  color: #fffaf1;
+}
+
+.green6-bg [class*=txt] {
+  color: #fffaf1;
+}
+
+.white-bg [class*=txt] {
   color: #e8a724;
 }
 
-.yellow4-bg {
-  background-color: #e8a724;
+.yellow3-bg [class*=txt] {
+  color: white;
+}
+
+.yellow1-bg [class*=txt] {
+  color: #2a3330;
 }
 
 /*   ::: COMPONENTS :::   */

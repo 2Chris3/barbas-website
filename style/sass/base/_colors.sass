@@ -1,27 +1,55 @@
-/*   ::: MAPS :::   */
+/*   ::: VARIABLES & MAPS :::   */
 
-$green : (green1 #f4fffb,green2 #def2ea,green3 #6c867d,green4 #667c7e,green5 #43524e,green6 #2a3330)
-$yellow : (yellow1 #fffaf1,yellow2 #ffeac1,yellow3 #e7cb84,yellow4 #e8a724)
+// green variants
+$green1 : #f4fffb
+$green2 : #def2ea
+$green3 : #6c867d
+$green4 : #667c7e
+$green5 : #43524e
+$green6 : #2a3330
+$green : (green1 $green1,green2 $green2,green3 $green3,green4 $green4,green5 $green5,green6 $green6)
 
+// yellow variants
+$yellow1 : #fffaf1
+$yellow2 : #ffeac1
+$yellow3 : #e7cb84
+$yellow4 : #e8a724
+$yellow : (yellow1 $yellow1,yellow2 $yellow2,yellow3 $yellow3,yellow4 $yellow4)
+    
+
+
+/*   ::: BACKGROUNDS :::   */
+
+// loop : green backgrounds
+@each $class, $hexValue in $green
+    .#{$class}-bg
+        background-color: $hexValue
+
+// loop : yellow backgrounds
+@each $class, $hexValue in $yellow
+    .#{$class}-bg
+        background-color: $hexValue
+
+.white-bg
+    background-color: white
 
     
-/*   ::: LOOPS :::   */
 
-@each $color, $hexValue in $green
-    // text
-    .#{$color}-txt
-        color: $hexValue
+/*   ::: COMPLEX SELECTORS :::   */
 
-    // background
-    .#{$color}-bg
-        background-color: $hexValue
+// green backgrounds -> yellow text
+@for $i from 4 through 6     
+    .green#{$i}-bg [class*="txt"]
+        color: $yellow1
 
+// white background -> yellow text
+.white-bg [class*="txt"]
+    color: $yellow4
 
-@each $color, $hexValue in $yellow
-    // text
-    .#{$color}-txt
-        color: $hexValue
+// yellow background -> white text
+.yellow3-bg [class*="txt"]
+    color: white
 
-    // background
-    .#{$color}-bg
-        background-color: $hexValue
+// yellow background -> green text
+.yellow1-bg [class*="txt"]
+    color: $green6
