@@ -1,5 +1,9 @@
 /*   ::: BASE :::   */
-:where(html, body, header, main, footer, section, article) {
+:where(html, body) {
+  width: 100vw;
+}
+
+:where(header, main, footer, section, article) {
   width: 100%;
 }
 
@@ -9,6 +13,10 @@
 
 :where(img) {
   object-fit: cover;
+}
+
+:where(aside) {
+  height: 100%;
 }
 
 * {
@@ -47,6 +55,25 @@
   background-color: grey;
   height: 30px;
   border: solid 1px black;
+}
+
+:where(.flexbox) {
+  display: flex;
+}
+
+:where(.row) {
+  width: 100%;
+  display: block;
+}
+
+:where(.col) {
+  height: 100%;
+  flex: 1 1 auto;
+}
+
+:where(.left) {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /*   ::: VARIABLES & MAPS :::   */
@@ -123,12 +150,18 @@
 /*   ::: COMPONENTS :::   */
 /*   ::: HOMEPAGE LAYOUT :::   */
 /*   ::: STRECHING RULES :::   */
-.row {
-  width: 100%;
+.body {
+  grid-template: 100vh/2% auto 2%;
+}
+.body__aside {
+  display: flex;
+}
+.body__aside__left {
+  flex-direction: row-reverse;
 }
 
-.col {
-  height: 100%;
+.ray {
+  width: 2px;
 }
 
 /*   ::: ANIMATIONS :::   */

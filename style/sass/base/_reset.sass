@@ -1,4 +1,7 @@
-:where(html, body, header, main, footer, section, article)
+:where(html, body)
+  width: 100vw
+  
+:where(header, main, footer, section, article)
   width: 100%
 
 :where(html)
@@ -6,6 +9,9 @@
 
 :where(img)
   object-fit: cover
+
+:where(aside)
+  height: 100%
 
 * 
   margin: 0
@@ -38,4 +44,20 @@
   height: 30px
   border: solid 1px black
 
+:where(.flexbox)
+  display: flex
+
+:where(.row)
+    width: 100%
+    display: block
+
+:where(.col)
+    height: 100%
+    flex: 1 1 auto
+
+:where(.left)
+  display: flex
+  flex-direction: row-reverse
+
+:where(.right)
 

@@ -11,7 +11,7 @@
         <title>Document</title>
     </head>
 
-    <body>
+    <body class="body .grid">
 
         <!-- BEM : (Block__Element Modifiers) -->
 
@@ -20,105 +20,114 @@
         <!-- v : vertical -->
         <!-- h : horizontal -->
 
+        <aside class="body__aside body__aside__left  col">
+            <div class="ray ray__left green6-bg">
+        </aside>
+        <div class="body__middle col">
 
+            <header class="yellow1-bg">
+                <div class="flexbox">
 
-        <header class="yellow1-bg">
-            <div class="row">
+                    <!-- logo -->
+                    <figure>
+                        <img src="./assets/images/logo/bsb-website-logo.svg" width="100px" height="100px"
+                            alt="Barba's Barbershop Logo" class="shortLogo">
+                    </figure>
 
-                <!-- logo-->
-                <figure>
-                    <img src="./assets/images/logo/bsb-website-logo.svg" width="100px" height="100px"
-                        alt="Barba's Barbershop Logo" class="shortLogo">
-                </figure>
-
-                <!-- navigation bar -->
-                <nav aria-label="primary">
-                    <ul class="navBar">
-                        <li class="navBar__link">Information</li>
-                        <li class="navBar__link">About us</li>
-                        <li class="navBar__link">Contact</li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <section class="reservation yellow1-bg">
-                <div class="row">
-                    <figure barbas><img class="letterLogo"> </figure>
+                    <!-- navigation bar -->
+                    <nav aria-label="primary">
+                        <ul class="navBar">
+                            <li class="navBar__link">Information</li>
+                            <li class="navBar__link">About us</li>
+                            <li class="navBar__link">Contact</li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="row"></div>
-                <a href="" class="btn">
-                    <div class="btn__face yellow3-bg">
-                        <p class="btn__txt">BOOK NOW !</p>
-                    </div></a>
-                    <div class="btn__rings"></div>
-                    <div class="btn__rings"></div>
-                    <div class="btn__rings"></div>
-            </section>
+            </header>
 
-            <section class="businessInfo green2-bg">
-
-                <!-- green stripe -->
-                <header class="stripe green6-bg row">
-                    <p class="stripe__txt">Where and when ?</p>
-                </header>
-
-                <div class="grid">
-
-                    <div class="col">
-                        <div class="row">❌</div>
-                        <div class="row location">❌</div>
-                        <div class="row">❌</div>
+            <main>
+                <section class="reservation yellow1-bg">
+                    <div class="row">
+                        <figure barbas><img class="letterLogo"> </figure>
                     </div>
-                    <div class="col">
-                        <div class="row">❌</div>
-                        <div class="row schedule">❌</div>
-                        <div class="row">❌</div>
+                    <div class="row"></div>
+                    <a href="" class="btn">
+                        <div class="btn__face yellow3-bg">
+                            <p class="btn__txt">BOOK RIGHT NOW !</p>
+                        </div></a>
+                        <div class="btn__rings"></div>
+                        <div class="btn__rings"></div>
+                        <div class="btn__rings"></div>
+                </section>
+
+                <section class="businessInfo green2-bg">
+
+                    <!-- green stripe -->
+                    <header class="stripe green6-bg row">
+                        <p class="stripe__txt">Where and when ?</p>
+                    </header>
+
+                    <div class="grid">
+
+                        <div class="col">
+                            <div class="row">❌</div>
+                            <div class="row location">❌</div>
+                            <div class="row">❌</div>
+                        </div>
+                        <div class="col">
+                            <div class="row">❌</div>
+                            <div class="row schedule">❌</div>
+                            <div class="row">❌</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="aboutUs yellow1-bg">❌</section>
+            </main>
+
+            <footer class="green5-bg">
+                <adress class="contact h-desk">
+
+                    <!-- email : text + link -->
+                    <div class="contact__email">
+                        <a href="mailto:barbasbarbershop17@gmail.com" class="contact__email__btn txt">Email</a>
+                        <p class="semicolon txt">:</p>
+                        <p class="contact__email__txt">barbasbarbershop17@gmail.com</p>
+                    </div>
+
+                    <!-- phone : text + link -->
+                    <div class="contact__phone">
+                        <a href="tel:+17786975374" class="contact__phone__btn txt">Phone</a>
+                        <p class="semicolon txt">:</p>
+                        <p class="contact__phone__txt">778 697 5374</p>
+                    </div>
+                </adress>
+
+                <!-- drop a review : text + link -->
+                <div class="review h-desk">
+                    <p class="txt">We are exited to hear about your experience at <strong>Barba's Barbershop</strong></p>
+                    <a class="btn white-bg" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fapi%2Fjs%2FReviewsService.CrossOriginAuthSuccess%3Fpb%3D%211shttps%253A%252F%252Fwww.google.com%26key%3DAIzaSyBcv0QfUNUfBwo8pIGJ3teNCkaluSGUWus&hl=en&ifkv=AVQVeyySNgvafqDEd0-YxGrDt04VcGrl4fSnOBtLXTO_b6bN76SresQy0ZrAlyEgirUidTG_dlgwqQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1711428912%3A1698560980470445&theme=glif">
+                        <p class="btn__txt">How was your experience ?</p>
+                    </a>
+                </div>
+
+                <!-- social media : text + links -->
+                <div class="socialMedia h-desk">
+                    <p class="socialMedia__txt">CHECK OUR HAIRCUTS AND MORE ON <strong class="FB">FACEBOOK</strong> AND <strong class="IG">INSTAGRAM</strong>
+                    </p>
+                    <div class="socialMedia__icons">
+                        <div class="socialMedia__icons__FB">❌</div>
+                        <div class="socialMedia__icons__IG">❌</div>
                     </div>
                 </div>
-            </section>
+            </footer>
 
-            <section class="aboutUs yellow1-bg">❌</section>
-        </main>
+        </div>
+        <aside class="body__aside body__aside__right col">
+            <div class="ray ray__right green6-bg">
+        </aside>
 
-        <footer class="green5-bg">
-            <adress class="contact">
-
-                <!-- email : text + link -->
-                <div class="contact__email">
-                    <a href="mailto:barbasbarbershop17@gmail.com" class="contact__email__btn txt">Email</a>
-                    <p class="semicolon txt">:</p>
-                    <p class="contact__email__txt">barbasbarbershop17@gmail.com</p>
-                </div>
-
-                <!-- phone : text + link -->
-                <div class="contact__phone">
-                    <a href="tel:+17786975374" class="contact__phone__btn txt">Phone</a>
-                    <p class="semicolon txt">:</p>
-                    <p class="contact__phone__txt">778 697 5374</p>
-                </div>
-            </adress>
-
-            <!-- drop a review : text + link -->
-            <div class="review">
-                <p class="txt">We are exited to hear about your experience at <strong>Barba's Barbershop</strong></p>
-                <a class="btn white-bg" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fmaps%2Fapi%2Fjs%2FReviewsService.CrossOriginAuthSuccess%3Fpb%3D%211shttps%253A%252F%252Fwww.google.com%26key%3DAIzaSyBcv0QfUNUfBwo8pIGJ3teNCkaluSGUWus&hl=en&ifkv=AVQVeyySNgvafqDEd0-YxGrDt04VcGrl4fSnOBtLXTO_b6bN76SresQy0ZrAlyEgirUidTG_dlgwqQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1711428912%3A1698560980470445&theme=glif">
-                    <p class="btn__txt">How was your experience ?</p>
-                </a>
-            </div>
-
-            <!-- Social media : text + links -->
-            <div class="socialMedia">
-                <p class="socialMedia__txt">CHECK OUR HAIRCUTS AND MORE ON <strong class="FB">FACEBOOK</strong> AND <strong class="IG">INSTAGRAM</strong>
-                </p>
-                <div class="socialMedia__icons">
-                    <div class="socialMedia__icons__FB">❌</div>
-                    <div class="socialMedia__icons__IG">❌</div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- JavaScript -->
+        <!-- javaScript -->
         <script src="./JS/index.js" defer></script>
         <noscript>Your browser does not support JavaScript!</noscript>
     </body>
