@@ -56,18 +56,11 @@
   border: solid 1px black
 
 // custom elements
-:where(.grid)
-  display: grid
-
-:where(.flexbox)
-  display: flex
-
-:where(.row, .col)
-  flex: 1 1 auto
-
 :where(.row)
     width: 100%
 
 :where(.col)
     height: 100%
     
+:where(.row, .col)
+  flex: 1 1 auto

@@ -1,0 +1,21 @@
+/*   ::: MAP:::   */
+
+$layers: (-3: html, -2: body, -1: aside, 2: section, 3: article)
+
+
+
+/*   ::: LOOP :::   */
+
+@each $index, $layer in $layers
+    #{$layer}
+        z-index: calc($index * 10)
+
+
+
+/*   ::: ELEMENTS :::   */
+
+header, main, footer
+    z-index: 10
+
+.body__middle 
+    z-index: 0

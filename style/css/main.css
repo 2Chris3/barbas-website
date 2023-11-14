@@ -1,5 +1,44 @@
 /*   ::: MIXINS :::   */
+/*   ::: MAP:::   */
+/*   ::: LOOP :::   */
+html {
+  z-index: -30;
+}
+
+body {
+  z-index: -20;
+}
+
+aside {
+  z-index: -10;
+}
+
+section {
+  z-index: 20;
+}
+
+article {
+  z-index: 30;
+}
+
+/*   ::: ELEMENTS :::   */
+header, main, footer {
+  z-index: 10;
+}
+
+.body__middle {
+  z-index: 0;
+}
+
+.grid {
+  display: grid;
+}
+
 /*   ::: CONTAINERS :::   */
+.flexbox {
+  display: flex;
+}
+
 /*   ::: ITEMS :::   */
 /*   ::: BASE :::   */
 /*   ::: DEFAULT STYLE SHEET :::   */
@@ -63,24 +102,16 @@
   border: solid 1px black;
 }
 
-:where(.grid) {
-  display: grid;
-}
-
-:where(.flexbox) {
-  display: flex;
-}
-
-:where(.row, .col) {
-  flex: 1 1 auto;
-}
-
 :where(.row) {
   width: 100%;
 }
 
 :where(.col) {
   height: 100%;
+}
+
+:where(.row, .col) {
+  flex: 1 1 auto;
 }
 
 /*   ::: VARIABLES & MAPS :::   */
