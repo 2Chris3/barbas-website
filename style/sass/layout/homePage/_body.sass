@@ -1,24 +1,22 @@
 /*   ::: STRECHING RULES :::   */
 
 .body
-    grid-template: 100vh / 2% auto 2%
+    +grid-cols(2% auto 2%)
 
-    &__aside
-        display: flex
+    &__left,&__right
+        height: 100%
 
-        &__left
-            flex-direction: row-reverse
-
-        // &__right
-            // flex-direction: row
-
+    &__left
+        +flex-row-rvs
 
     // &__middle
+
+    // &__right
+
         
 
 .ray
     width: 2px
-
     // &__right
     
     // &__left

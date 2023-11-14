@@ -1,24 +1,33 @@
-:where(html, body)
-  width: 100vw
-  
-:where(header, main, footer, section, article)
-  width: 100%
+/*   ::: DEFAULT STYLE SHEET :::   */
 
+// scroll
 :where(html)
   scroll-behavior: smooth
+  z-index: 0
 
-:where(img)
-  object-fit: cover
+// dimentions
+:where(html, body)
+  width: 100vw
+  height: 100vh
+  
+:where(header, main, footer, section)
+  width: 100%
 
 :where(aside)
   height: 100%
 
+// all elements
 * 
   margin: 0
   padding: 0
   box-sizing: border-box
   overflow-x: hidden
 
+// images
+:where(img)
+  object-fit: cover
+
+// forms
 :where(button, input, fieldset)
   border: none
 
@@ -28,14 +37,16 @@
 :where(fieldset, figure)
   display: flex
 
-:where(ul, ol)
+// lists
+:where(ul, ol, dl)
   list-style: none
 
-:where(li)
+:where(li, dt, dd)
   text-indent: 0
   border: solid 1px black
   display: inline-flex
 
+// links
 :where(a, a:visited)
   color: black
   text-decoration: none
@@ -44,20 +55,19 @@
   height: 30px
   border: solid 1px black
 
+// custom elements
+:where(.grid)
+  display: grid
+
 :where(.flexbox)
   display: flex
 
+:where(.row, .col)
+  flex: 1 1 auto
+
 :where(.row)
     width: 100%
-    display: block
 
 :where(.col)
     height: 100%
-    flex: 1 1 auto
-
-:where(.left)
-  display: flex
-  flex-direction: row-reverse
-
-:where(.right)
-
+    

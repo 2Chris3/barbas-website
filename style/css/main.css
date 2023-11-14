@@ -1,18 +1,20 @@
+/*   ::: MIXINS :::   */
+/*   ::: CONTAINERS :::   */
+/*   ::: ITEMS :::   */
 /*   ::: BASE :::   */
-:where(html, body) {
-  width: 100vw;
-}
-
-:where(header, main, footer, section, article) {
-  width: 100%;
-}
-
+/*   ::: DEFAULT STYLE SHEET :::   */
 :where(html) {
   scroll-behavior: smooth;
+  z-index: 0;
 }
 
-:where(img) {
-  object-fit: cover;
+:where(html, body) {
+  width: 100vw;
+  height: 100vh;
+}
+
+:where(header, main, footer, section) {
+  width: 100%;
 }
 
 :where(aside) {
@@ -24,6 +26,10 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+:where(img) {
+  object-fit: cover;
 }
 
 :where(button, input, fieldset) {
@@ -38,11 +44,11 @@
   display: flex;
 }
 
-:where(ul, ol) {
+:where(ul, ol, dl) {
   list-style: none;
 }
 
-:where(li) {
+:where(li, dt, dd) {
   text-indent: 0;
   border: solid 1px black;
   display: inline-flex;
@@ -57,23 +63,24 @@
   border: solid 1px black;
 }
 
+:where(.grid) {
+  display: grid;
+}
+
 :where(.flexbox) {
   display: flex;
 }
 
+:where(.row, .col) {
+  flex: 1 1 auto;
+}
+
 :where(.row) {
   width: 100%;
-  display: block;
 }
 
 :where(.col) {
   height: 100%;
-  flex: 1 1 auto;
-}
-
-:where(.left) {
-  display: flex;
-  flex-direction: row-reverse;
 }
 
 /*   ::: VARIABLES & MAPS :::   */
@@ -151,12 +158,12 @@
 /*   ::: HOMEPAGE LAYOUT :::   */
 /*   ::: STRECHING RULES :::   */
 .body {
-  grid-template: 100vh/2% auto 2%;
+  grid-template-columns: 2% auto 2%;
 }
-.body__aside {
-  display: flex;
+.body__left, .body__right {
+  height: 100%;
 }
-.body__aside__left {
+.body__left {
   flex-direction: row-reverse;
 }
 
